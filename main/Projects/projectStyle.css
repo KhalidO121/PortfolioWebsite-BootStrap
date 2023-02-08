@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,200;0,700;1,700&display=swap');
+
+.nav-link{
+    font-family: 'Sofia Sans', sans-serif;
+    color: #9efffc ;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-left: 30px;
+    font-weight: 20px;
+}
+
+.logo{
+    font-family: 'Sofia Sans', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.navbar{
+    box-shadow: 0 8px 6px -6px rgb(31, 31, 31);
+}
+
+.bolded{
+    font-size: 32px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Project One Section */
+
+.projectOneSection{
+    padding-top: 20vh;
+}
+
+.projectOneSection hr{
+    color: white;
+    top:10%;
+}
+
+.projectOneSection h2{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+
+
+.projectOneSection p{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.github-button{
+    height: 50px;
+    width: 190px;
+    font-weight: 300;
+    background-color: #7F00FF;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px 2px #2C3E50;
+    border-width: 0px 3px 3px 3px black;
+}
+
+/* Project Two Section */
+
+.projectTwoSection{
+    padding-top: 10vh;
+}
+
+.projectTwoSection hr{
+    color: white;
+    top:10%;
+}
+
+.projectTwoSection h2{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+
+.projectTwoSection p{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Project Three Section */
+
+.projectThreeSection{
+    padding-top: 12vh;
+}
+
+.projectThreeSection hr{
+    color: white;
+    top:10%;
+}
+
+.projectThreeSection h2{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+
+.projectThreeSection p{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Project Four section */
+
+.projectFourSection{
+    padding-top: 12vh;
+    padding-bottom: 8vh;
+}
+
+.projectFourSection hr{
+    color: white;
+    top:10%;
+}
+
+.projectFourSection h2{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+
+.projectFourSection p{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Slide in animation */
+.hidden{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hidden.show{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+}
+
+/*  Media Queries */
+
+@media screen and (hover:hover){
+    .navbar a:hover {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 17%;
+    }
+    
+    .github-button:hover {
+        background-color: white;
+        color: black;
+        transition: all 0.3s;
+    }
+
+    .github-button span{
+        display: inline-block;
+        transition: 0.5s;
+      }
+      
+    .github-button span:after {
+        content: '\00bb';
+        opacity: 0;
+        right: -2px;
+        transition: 0.2s;
+    }
+    
+    .github-button:hover span {
+        padding-right: 12px;
+    }
+    
+    .github-button:hover span:after {
+        opacity: 1;
+    }
+
+}
+
+@media screen and (min-width:650px) and (max-width:992px) {
+    .projectOneSection{
+        padding-top: 14vh;
+    }
+
+    .projectTwoSection{
+        padding-top: 8vh;
+    }
+
+    .projectThreeSection{
+        padding-top: 8vh;
+    }
+
+    .projectFourSection{
+        padding-top: 8vh;
+    }
+    
+}
